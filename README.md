@@ -5,15 +5,15 @@
 
 CodeJobs offer a shared data interface from job postings by companies all around the world. It does this by providing endpoints, that developers can build client apps on and registered companies can use to create company profiles and post job openings. There are endpoints for listing the data as well. So there are possibilities of a wider reach with several clients displaying common data at different places.
 
-![](https://s8.postimg.org/9arrqheol/codelabs.png)
+![](https://s8.postimg.org/ltcyl7tgl/codelabs.png)
 
 
-## Usage example
+## Documentation
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Development setup
 
-The service is built with Django and the djangorestframework. Dependencies are available in there requirements.txt file.
+The service is built with Django and the djangorestframework. Dependencies are available in the requirements.txt file.
 
 OS X & Linux & Windows:
 
@@ -55,4 +55,4 @@ Distributed under the {{ }} license. See ``LICENSE`` for more information.
 [npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+[wiki]: https://github.com/amanfojnr/codejobs/wiki
