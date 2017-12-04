@@ -43,6 +43,13 @@ class ListingDetail(generics.RetrieveUpdateAPIView):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,
                           IsCompanyOrReadOnly)
 
+
 def no_email_confirm(request):
     """ overrides email confirm feature """
     pass
+
+
+def index(request):
+    """ launch homepage """
+    return render(request,
+                  "api/index.html")

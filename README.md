@@ -37,7 +37,7 @@ python manage.py runserver
 
 Kenneth Amanfo Junior – [@amanfojnr_](https://twitter.com/amanfojnr_) – amanfojnr@zoho.com
 
-Distributed under the {{ }} license. See ``LICENSE`` for more information.
+Distributed under the MIT  license. See ``LICENSE`` for more information.
 
 [https://github.com/amanfojnr](https://github.com/amanfojnr/)
 

@@ -38,13 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'api',
     'rest_framework.authtoken',
     'rest_auth',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'rest_auth.registration',
-    'api',
+   
 ]
 
 SITE_ID = 1
@@ -133,3 +134,32 @@ STATIC_URL = '/static/'
 # django-allauth config
 
 ACCOUNT_EMAIL_VERIFICATION = None
+
+# heroku django settings
+
+try:
+    import local_settings
+except ImportError:
+    import dj_database_url
+
+    ...
+    DEBUG = False
+
+    ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+
+    ...
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'codelabs',
+            'USER': 'amanfojnr',
+            'PASSWORD': '',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
+
+    ...
+    db_from_env = dj_database_url.config(conn_max_age=500)
+    DATABASES['default'].update(db_from_env)
