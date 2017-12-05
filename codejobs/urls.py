@@ -21,5 +21,4 @@ urlpatterns = [
     url(r'^$', api_views.index),
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include("api.urls")),
-
 ]
